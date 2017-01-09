@@ -1,0 +1,52 @@
+
+.athletes {
+
+}
+
+.athletes li {
+    border-radius: 3px;
+    margin: 10px 30px;
+    padding: 20px;
+    list-style: none;
+    max-width: 380px;
+    box-shadow:  3px 4px 3px #333;
+    transition: all 0.4s ease-out;
+    border: 1px solid rgba(22, 22, 22, 0.6);
+    cursor: pointer;
+}
+
+.athletes img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.athlete__id-wrap,
+.athlete__name-wrap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.athlete__id-wrap > * {
+    display: block;
+}
+
+.athlete__name-wrap {
+    margin-left: 5px;
+}
+
+.athlete__name-wrap h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.athlete__name-wrap .input__wrap {
+    font-size: 0.8rem;
+}
+
+.athletes li.selected {
+    background-color: #c4f3d7;
+}
+
+.athletes li h2 {
+    cursor: pointer;
+}
