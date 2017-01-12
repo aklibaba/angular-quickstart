@@ -19,8 +19,8 @@
 <ul class="athletes">
     <md-progress-spinner value="70" color="'accent'" mode="indeterminate" *ngIf="loading"></md-progress-spinner>
     <!--suppress SqlDialectInspection -->
-    <li [class.selected]="athlete===selectedAthlete" *ngFor="let athlete of athletes"
-        (click)="onSelect(athlete, $event)">
+    <a *ngFor="let athlete of athletes"
+        [routerLink]="['/detail', athlete.id]">
         <img src="{{ athlete.photoUrl }}" alt="Photo of {{ athlete.name }}">
         <div class="athlete__id-wrap">
             <span>Id:</span>
@@ -34,6 +34,5 @@
             </div>
         </div>
 
-    </li>
+    </a>
 </ul>
-<ta-athlete-details [athlete]="selectedAthlete"></ta-athlete-details>

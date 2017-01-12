@@ -1,1 +1,10 @@
-<h2 *ngIf="athlete">Selected athlete is {{ athlete.name }}</h2>
+<div *ngIf="athlete">
+    <h2>{{athlete.name}} details!</h2>
+    <div>
+        <label>id: </label>{{athlete.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="athlete.name" placeholder="name" />
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

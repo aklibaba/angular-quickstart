@@ -17,28 +17,7 @@ import {HomeComponent} from './home.component';
         BrowserModule,
         FormsModule,
         MaterialModule.forRoot(),
-        RouterModule.forRoot([
-            {
-                'path': 'athletes',
-                'component': AthletesList
-            },
-            {
-                path: 'dashboard',
-                component: Dashboard
-            },
-            {
-                path: 'home',
-                component: HomeComponent,
-            },
-            {
-                path: '',
-                redirectTo: 'home',
-                pathMatch: 'full'
-            },
-            {
-                path: 'detail/:id',
-                component: AthleteDetails
-            }])
+        RouterModule.forRoot()
     ],
     declarations: [
         AppComponent,
